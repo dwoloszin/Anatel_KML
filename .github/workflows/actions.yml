@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 0 * */1 0' # At 00:00 on Thursday #  '*/30 * * * *' 30min  #'0 0 * * 1' # At 00:00 on Monday   every 5 minutes */5 * * * *  site:   https://crontab.guru/#*/5_*_*_*_*
+    - cron: '00 00 * * 1' # At 00:00 on Thursday #  '*/30 * * * *' 30min  #'0 0 * * 1' # At 00:00 on Monday   every 5 minutes */5 * * * *  site:   https://crontab.guru/#*/5_*_*_*_*
 
 jobs:
   build:
