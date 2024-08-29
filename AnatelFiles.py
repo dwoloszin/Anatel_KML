@@ -75,7 +75,7 @@ def get_last_updated_file(NameCheck):
         return True
     return False
 
-def wait_for_downloads_to_complete():
+def wait_for_downloads_to_complete(): # not working fine, try to a better aprouche
     while True:
         downloading_files = glob.glob(os.path.join(download_directory, '*.zip'))
         if len(downloading_files) > 0:
@@ -117,7 +117,8 @@ def getAnatelData(state, tec):
     driver.type('//*[@id="fc_11"]', f"{tec}\n")
     driver.sleep(5)
     driver.click('//*[@id="download_csv"]')
-    driver.sleep(20)
+    #driver.click('//*[@id="download_xlsx"]')
+    driver.sleep(30) # 30 for csv, 120 to xlsx
     wait_for_downloads_to_complete()
     rename_downloaded_files(tec)
     driver.quit()

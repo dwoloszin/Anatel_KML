@@ -1,0 +1,1 @@
+# to do list: change export from anatel from .csv to xlsx because in some fields like "EndComplemento" there's "," [comma] this cause cell shifting and data distorcing. must use xlsx export your try to correct this import in DF 
