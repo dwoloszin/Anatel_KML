@@ -36,14 +36,14 @@ except KeyError:
 
 
 if __name__ == "__main__":
-    '''
+    
     #==========================================
     #run once a month
     opList = ['TIM','CLARO','VIVO','ALGAR']
     for i in opList:
         distCalc.process(i)
     #=======================================
-    '''
+    
 
 
 
